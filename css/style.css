@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+:root {
+  font-size: 10px;
+  --nintendocolor: #E10112
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+}
+
+main {
+  padding: 1rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  background: var(--nintendocolor);
+  color: white;
+  padding: 2rem;
+}
+
+header ul {
+  display: flex;
+  gap: 1rem;
+}
+
+header ul li {
+  list-style-type: none;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+header li a {
+  text-decoration: none;
+  color: white;
+  padding: 3rem 1rem;
+  transition: all .3s ease-in-out;
+}
+
+header li a:hover {
+  background-color: white;
+  color: var(--nintendocolor);
+}
+
+h1 {
+  font-size: 7rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+p {
+  font-size: 3rem;
+  text-align: center;
+}
+
+#banner img {
+  background-size: cover;
+  width: 100vw;
+  height: calc(100vh - 13.6rem);
+}
+
+.texto {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 7rem;
+  text-align: center;
+  padding: 6rem 2rem;
+}
+
+.grid #filme {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 7rem;
+  text-align: center;
+  padding: 6rem 2rem;
+}
+
+.grid #jogo {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 7rem;
+  text-align: center;
+  padding: 6rem 2rem;
+}
+
+.categoria img {
+  height: 50rem;
+  width: 50rem;
+  object-fit: cover;
+  transition: all .3s ease-in-out;
+}
+
+@media (max-width: 1200px) {
+  :root {
+    font-size: 7px;
+  }
+
+  .grid #filme {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .grid #jogo {
+    grid-template-columns: repeat(2, 1fr);
+   }
+  
+  }
+  
+@media (max-width: 700px) {
+  :root {
+    font-size: 5px;
+  }
+
+.grid #filme {
+  grid-template-columns: 1fr;
+}
+
+.grid #jogo {
+  grid-template-columns: 1fr;
+ }
+}
